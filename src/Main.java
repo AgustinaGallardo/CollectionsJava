@@ -1,4 +1,4 @@
-import Service.ServicePerro;
+import Service.DogService;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        ServicePerro ser = new ServicePerro();
+        DogService ser = new DogService();
 
         Scanner sc = new Scanner(System.in);
         int num = -1;
@@ -31,10 +31,10 @@ public class Main {
             num = Integer.parseInt(sc.nextLine());
 
             switch (num) {
-                case 1 -> ser.cargarLista();
-                case 2 -> ser.mostrarListaPerros();
-                case 3 -> ser.mostrarListaRazas();
-                case 4 -> ser.seleccionPerro();
+                case 1 -> ser.loadList();
+                case 2 -> ser.showListDogs();
+                case 3 -> ser.showListRace();
+                case 4 -> ser.selectionDog();
                 case 0 -> System.out.println("Hasta la proxima!");
                 default -> System.out.println("Opción inválida, por favor ingrese una opción válida.");
             }

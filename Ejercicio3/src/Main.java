@@ -1,4 +1,4 @@
-import Service.ServiceAlumno;
+import Service.StudentService;
 
 public class Main {
     /**
@@ -9,8 +9,8 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        ServiceAlumno ser = new ServiceAlumno();
-        ser.crearAlumnos();
-        ser.BuscarAlumnoNotaFinal();
+        StudentService ser = new StudentService();
+        ser.createStudent();
+        ser.SearchStudentFinalGrade();
     }
 }
