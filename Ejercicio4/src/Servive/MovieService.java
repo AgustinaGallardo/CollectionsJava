@@ -11,7 +11,6 @@ import java.util.*;
  *      * crear otra Pelicula o no.
  */
 public class MovieService {
-
     private List<Movie> lstMovies;
     private Scanner sc;
     public MovieService() {
